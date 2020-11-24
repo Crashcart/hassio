@@ -1,0 +1,23 @@
+{
+  "name": "Hass.IO ablity to mount remote shares",
+  "url": "https://github.com/Crashcart/hassio-samba",
+  "maintainer": "Sid Lucas <sid.lucas@gmail.com>"
+  "version": "1",
+  "slug": "hassio-samba",
+  "description": "Hass.IO ablity to mount remote shares",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "system",
+  "init": true,
+  "boot": "auto",
+  "options": {
+    "ssl": true,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem"
+  },
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
+    "ssl": "bool",
+    "certfile": "str",
+    "keyfile": "str"
+  }
+}
