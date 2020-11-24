@@ -2,7 +2,6 @@
   "name": "Hass.IO ablity to mount remote shares",
   "url": "https://github.com/Crashcart/hassio-samba",
   "maintainer": "Sid Lucas <sid.lucas@gmail.com>"
-  "url": "https://github.com/Crashcart/hassio-samba",
   "version": "1",
   "slug": "hassio-samba",
   "description": "Hass.IO ablity to mount remote shares",
