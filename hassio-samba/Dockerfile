@@ -14,15 +14,11 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 ARG BUILD_ARCH=amd64
 # hadolint ignore=DL3003
-RUN \
-    apk add --no-cache --virtual .build-dependencies \
-        cifs-tools \
-     \
-    && rm -f -r \
-        /root/.cache \
-        /root/.cmake \
-        /tmp/*
-
+RUN apk add --no-cache \
+    coreutils=8.32-r0 \
+    wget=1.20.3-r1 \
+    cifs-tools 
+    
 # Copy root filesystem
 COPY rootfs /
 
