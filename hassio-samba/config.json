@@ -19,5 +19,5 @@
     "liquor": "bool",
     "name": "str",
     "year": "int"
-  }
+  },
 }
