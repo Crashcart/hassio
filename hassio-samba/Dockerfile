@@ -12,14 +12,12 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 #COPY requirements.txt /tmp/
 
 # Setup base
-#ARG BUILD_ARCH=amd64
+ARG BUILD_ARCH=amd64
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         cifs-tools \
      \
-    && apk add --no-cache \
-   cifs-tools \
     && rm -f -r \
         /root/.cache \
         /root/.cmake \
