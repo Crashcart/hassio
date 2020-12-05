@@ -3,16 +3,17 @@ ARG BUILD_FROM=hassioaddons/base:8.0.6
 FROM ${BUILD_FROM}
 
 # Set shell
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+#SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Add env
 #ENV TERM="xterm-256color"
 
-# Copy Python requirements file
-#COPY requirements.txt /tmp/
-
 # Setup base
-ARG BUILD_ARCH=amd64
+# Build arguments
+ARG BUILD_ARCH
+ARG BUILD_DATE
+ARG BUILD_REF
+ARG BUILD_VERSION
 # hadolint ignore=DL3003
 RUN apk add --no-cache \
     coreutils=8.32-r0 \
@@ -21,11 +22,6 @@ RUN apk add --no-cache \
     
 # Copy root filesystem
 COPY rootfs /
-
-# Build arguments
-ARG BUILD_DATE
-ARG BUILD_REF
-ARG BUILD_VERSION
 
 # Labels
 LABEL \
