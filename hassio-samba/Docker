@@ -19,26 +19,7 @@ RUN \
         cifs-tools \
      \
     && apk add --no-cache \
-        ack=3.3.1-r0 \
-        alsa-plugins-pulse=1.2.2-r1 \
-        alsa-utils=1.2.2-r0 \
-        awake=1.0-r4 \  
-        coreutils=8.32-r0 \
-        wget=1.20.3-r1.10-r0 \
-        device-mapper-libs=2.02.186-r1 \
-        docker-bash-completion=19.03.12-r0 \
-        docker-zsh-completion=19.03.12-r0 \
-        git=2.26.2-r0 \
-        nano-syntax=4.9.3-r0 \
-        nano=4.9.3-r0 \
-        net-tools=1.60_git20140218-r2 \
-        networkmanager=1.24.2-r0 \
-        sudo=1.9.0-r0 \
-    \
-    \
-    && chmod a+x /usr/bin/ha \
-    && ha completion > /usr/share/bash-completion/completions/ha \
-    \
+   cifs-tools \
     && rm -f -r \
         /root/.cache \
         /root/.cmake \
