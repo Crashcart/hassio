@@ -1,4 +1,4 @@
   
 [submodule "addon-hassio-samba"]
-	path = hassio-samba
-	url = https://github.com/Crashcart/hassio-samba/hassio-samba/
+	path = hassio-mount
+	url = https://github.com/Crashcart/hassio/hassio-mount/
