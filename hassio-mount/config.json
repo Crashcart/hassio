@@ -1,0 +1,23 @@
+{
+  "name": "cifs for hassio",
+  "version": "1",
+  "slug": "cifs",
+  "description": "cifs for hassio",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+     "beer": true,
+     "wine": true,
+     "liquor": false,
+     "name": "world",
+     "year": 2017
+  },
+  "schema": {
+    "beer": "bool",
+    "wine": "bool",
+    "liquor": "bool",
+    "name": "str",
+    "year": "int"
+  },
+}
