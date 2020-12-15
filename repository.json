@@ -1,6 +1,7 @@
   
 {
   "name": "Hass.IO  add-on repository",
-  "url": "https://github.com/Crashcart/hassio",
+   master
+  "url": "https://github.com/Crashcart/hassio/",
   "maintainer": "Sid Lucas <sid.lucas@gmail.com>"
 }
