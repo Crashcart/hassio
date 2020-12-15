@@ -1,0 +1,11 @@
+---
+channel: stable
+addons:
+  hassio-mount:
+    repository: hassio/hassio-mount
+    target: adb
+    image: hassioaddons/adb-{arch}
+  hassio-sshfs:
+    repository: hassio-addons/addon-adguard-home
+    target: adguard
+    image: hassioaddons/adguard-{arch}
